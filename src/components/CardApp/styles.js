@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/styles'
+import { generateRandomColor } from '../../helpers/colorsHelper'
 
 export const useStyles = makeStyles({
     cardWrapper: {
@@ -24,11 +25,19 @@ export const useStyles = makeStyles({
         resize: 'none',
         outlineWidth: 0,
     },
-    cardIcon: { cursor: 'pointer', color: '#ffffff' },
+    cardIcon: {
+        cursor: 'pointer',
+        transition: 'transform 0.15s ease-in-out',
+        color: '#000000',
+        '&:hover': {
+            transform: 'scale3d(1.5, 1.5, 1)',
+            color: generateRandomColor(),
+        },
+    },
     colorPicker: {
         position: 'absolute',
         top: '45px',
-        left: '240px',
+        left: '0px',
         zIndex: '1',
         display: ({ displayColorPicker }) =>
             displayColorPicker ? 'block' : 'none',

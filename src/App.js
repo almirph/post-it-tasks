@@ -11,7 +11,7 @@ function App() {
     return (
         <React.Fragment>
             <AppBar className={classes.menu} position="fixed">
-                <Toolbar>Lista de Tarefas</Toolbar>
+                <Toolbar>Post-Its</Toolbar>
             </AppBar>
             <div className={classes.offset} />
             <CardContextProvider>

@@ -76,8 +76,8 @@ function CardApp({ card }) {
                                 onClick={() => onClickShowColorPicker()}
                             ></PaletteIcon>
                             <DeleteIcon
-                                onClick={() => onClickDelete()}
                                 className={classes.cardIcon}
+                                onClick={() => onClickDelete()}
                             ></DeleteIcon>
                         </Typography>
                         <Typography>
